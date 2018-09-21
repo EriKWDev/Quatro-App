@@ -15,6 +15,8 @@ public class BoardManager : MonoBehaviour {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
 				board[i + "" + j] = children[k].gameObject;
+				children[k].gameObject.name = i + "" + j;
+				children[k].gameObject.GetComponent<BoardTile> ().id = i + "" + j;
 				k++;
 			}
 		}
@@ -41,15 +43,18 @@ public class BoardManager : MonoBehaviour {
 		RaycastHit hit = new RaycastHit ();
 
 		if (Physics.Raycast(ray, out hit) && Input.GetMouseButtonDown (1)) {
-			/*
-			if (hit.collider.gameObject.layer == 9) {
+			
+			if (hit.collider.gameObject.layer == 9 && hit.collider.gameObject.GetComponent<BoardTile> ().occupied == false) {
 				GameObject boardTile = hit.collider.gameObject;
 				boardTile.GetComponent<Renderer>().material.color = Color.red;
-				GameObject tile = GameObject.Instantiate(gameManager.prefabs[Random.Range (0, gameManager.prefabs.Count-1)]);
-				tile.transform.position = hit.transform.position + Vector3.up * 1.2f;
+				selectedObject.transform.position = hit.transform.position + Vector3.up * 1.2f;
+				DeselectAllTiles ();
+				selectedObject.GetComponent<Tile> ().selectable = false;
+				selectedObject = null;
+				hit.collider.gameObject.GetComponent<BoardTile> ().occupied = true;
 			}
-			*/
-			if (hit.collider.gameObject.layer == 10) {
+			
+			if (hit.collider.gameObject.layer == 10 && hit.collider.gameObject.GetComponent<Tile> ().selectable == true) {
 				print(hit.collider.name);
 				GameObject tile = hit.collider.gameObject;
 				DeselectAllTiles();

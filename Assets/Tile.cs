@@ -5,6 +5,7 @@ using UnityEngine;
 public class Tile : MonoBehaviour {
 
 	public bool selected = false;
+	public bool selectable = true;
 	public Color selectedColor;
 	Color startColor;
 	Color lerpedColor;

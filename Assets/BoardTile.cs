@@ -5,4 +5,5 @@ using UnityEngine;
 public class BoardTile : MonoBehaviour {
 
 	public string id = "";
+	public bool occupied = false;
 }
