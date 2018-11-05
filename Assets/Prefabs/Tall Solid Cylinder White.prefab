@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1689854286551218}
+  m_RootGameObject: {fileID: 1191320635930080}
   m_IsPrefabParent: 1
---- !u!1 &1689854286551218
+--- !u!1 &1191320635930080
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4135450553939684}
-  - component: {fileID: 33167109655220546}
-  - component: {fileID: 23557027299148436}
-  - component: {fileID: 95173848037980862}
-  - component: {fileID: 114317732158979718}
-  - component: {fileID: 65898311948726792}
+  - component: {fileID: 4815919940081198}
+  - component: {fileID: 33262944084473296}
+  - component: {fileID: 23981078595528796}
+  - component: {fileID: 95135500080172890}
+  - component: {fileID: 114194702061322494}
+  - component: {fileID: 65751376645595400}
   m_Layer: 10
-  m_Name: Tall Hollow Cube
+  m_Name: Tall Solid Cylinder White
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4135450553939684
+--- !u!4 &4815919940081198
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
+  m_GameObject: {fileID: 1191320635930080}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5, y: 1.2, z: 1.1999998}
+  m_LocalPosition: {x: -15, y: 2.2, z: -1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!23 &23557027299148436
+--- !u!23 &23981078595528796
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
+  m_GameObject: {fileID: 1191320635930080}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,34 +78,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33167109655220546
+--- !u!33 &33262944084473296
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
-  m_Mesh: {fileID: 4300000, guid: befc7f3c4db912b4395dc81814b20c55, type: 3}
---- !u!65 &65898311948726792
+  m_GameObject: {fileID: 1191320635930080}
+  m_Mesh: {fileID: 4300000, guid: 2c7556bcc4436c243aa9055588aff604, type: 3}
+--- !u!65 &65751376645595400
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
+  m_GameObject: {fileID: 1191320635930080}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2.0000005, z: 5.000001}
-  m_Center: {x: 0, y: 0, z: 1.5000004}
---- !u!95 &95173848037980862
+  m_Size: {x: 2, y: 2.0000005, z: 4.930794}
+  m_Center: {x: 0, y: 0, z: 1.4653969}
+--- !u!95 &95135500080172890
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
+  m_GameObject: {fileID: 1191320635930080}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: befc7f3c4db912b4395dc81814b20c55, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 2c7556bcc4436c243aa9055588aff604, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -114,16 +114,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114317732158979718
+--- !u!114 &114194702061322494
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689854286551218}
+  m_GameObject: {fileID: 1191320635930080}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cf91b9769f01d74f8f80e4e5a5c9c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  properties: 00000000050000000200000006000000
   selected: 0
+  selectable: 1
   selectedColor: {r: 0.14273356, g: 0.8088235, b: 0.42295066, a: 0}
+  bePosition: {x: 0, y: 0, z: 0}
